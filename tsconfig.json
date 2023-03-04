@@ -10,5 +10,5 @@
   },
   "types": ["node", "jest", "@testing-library/jest-dom"],
   "include": ["app/javascript/**/*"],
-  "exclude": ["**/*.test.ts*", "**/*.spec.ts*", "**/*.d.ts"]
+  "exclude": ["**/*.d.ts"]
 }
