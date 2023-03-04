@@ -9,6 +9,6 @@
     "jsx": "react"
   },
   "types": ["node", "jest", "@testing-library/jest-dom"],
-  "include": ["app/javascript/**/*"],
+  "include": ["app/javascript/**/*.ts*"],
   "exclude": ["**/*.d.ts"]
 }
