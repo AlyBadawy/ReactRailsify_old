@@ -8,8 +8,10 @@ ruby "3.2.0"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 gem "bootsnap", require: false
+gem "hashdiff"
 gem "jbuilder"
 gem "jsbundling-rails"
+gem "paper_trail"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "sprockets-rails"
