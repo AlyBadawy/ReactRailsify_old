@@ -150,7 +150,7 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   CountComments: false
-  Max: 10
+  Max: 50
   AllowedMethods:
     - context
     - describe
@@ -163,6 +163,7 @@ Metrics/BlockLength:
     - group
   Exclude:
     - config/routes.rb
+    - config/seeds.rb
 
 Metrics/ClassLength:
   Enabled: true
@@ -197,6 +198,10 @@ RSpec/DescribeClass:
 RSpec/ExampleLength:
   Enabled: true
   Max: 25
+RSpec/FilePath:
+  Enabled: true
+  Exclude:
+    - spec/helpers/react
 RSpec/HookArgument:
   Enabled: false
 RSpec/InstanceVariable:
@@ -214,3 +219,11 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/QuotedSymbols:
+  Enabled: true
+  EnforcedStyle: single_quotes
