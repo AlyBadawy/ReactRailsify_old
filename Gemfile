@@ -9,7 +9,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 gem "bootsnap", require: false
 gem "brakeman"
-
+gem "devise"
 gem "hashdiff"
 gem "jbuilder"
 gem "jsbundling-rails"
