@@ -43,10 +43,10 @@ RSpec.configure do |config|
   config.before(:each, js: true) { DatabaseCleaner.strategy = :truncation }
   config.before(:each) { DatabaseCleaner.start }
   config.after(:each) { DatabaseCleaner.clean }
-  config.before(:all) { DatabaseCleaner.start }
-  config.after(:all) { DatabaseCleaner.clean }
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+
+  config.include Devise::Test::IntegrationHelpers, type: :request
 
   Shoulda::Matchers.configure do |conf|
     conf.integrate do |with|

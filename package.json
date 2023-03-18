@@ -43,6 +43,7 @@
     "lint:fix": "eslint --fix --quiet --ext .ts,.tsx,.js,.jsx --no-error-on-unmatched-pattern app/javascript/**/*",
     "ts:check": "tsc --project tsconfig.json --noEmit",
     "ts:watch": "tsc --project tsconfig.json --noEmit --watch --preserveWatchOutput",
-    "test": "jest --silent --noStackTrace --coverage"
+    "test": "jest --silent --noStackTrace --coverage",
+    "test:all": "rubocop; yarn lint; yarn ts:check; test; rspec"
   }
 }

@@ -1,8 +1,18 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  ActiveAdmin.routes(self)
+  scope :api, defaults: { format: :json } do
+    devise_for :users,
+               controllers: {
+                 sessions: "users/sessions",
+                 registrations: "users/registrations",
+               }
+    get "/status/ok", to: "status#ok"
+    get "/status/user", to: "status#user"
+    get "/status/admin", to: "status#admin"
+  end
 
-  # Defines the root path route ("/")
   root "react#index"
+  get "*path", to: "react#index"
 end
