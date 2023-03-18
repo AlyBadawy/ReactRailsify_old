@@ -7,6 +7,7 @@ ruby "3.2.0"
 
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
+gem "activeadmin"
 gem "bootsnap", require: false
 gem "brakeman"
 gem "devise"
@@ -16,6 +17,7 @@ gem "jsbundling-rails"
 gem "paper_trail"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
+gem 'sassc-rails'
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
