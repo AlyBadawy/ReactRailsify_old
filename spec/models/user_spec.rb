@@ -23,8 +23,8 @@ RSpec.describe User do
   describe "associations" do
     subject(:user) { build(:user) }
 
-    it "has many associations", pending: "not yet" do
-      expect(user).to have_many(:allowed_jwt)
+    it "has many associations" do
+      expect(user).to have_many(:allowlisted_jwt)
     end
   end
 
