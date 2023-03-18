@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class StatusController < ApplicationController
   before_action :authenticate_user!, only: [:user]
   before_action :authenticate_admin!, only: [:admin]

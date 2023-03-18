@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.setup do |config|
   config.site_title = "React Railsify"
   config.site_title_link = "/"
