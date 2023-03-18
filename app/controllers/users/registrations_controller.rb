@@ -42,8 +42,5 @@ module Users
       render json: { message: "Something went wrong." }, status: :unprocessable_entity
     end
 
-    def aud
-      request.headers["JWT_AUD"]
-    end
   end
 end
