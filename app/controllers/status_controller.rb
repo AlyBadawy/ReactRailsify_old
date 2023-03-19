@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class StatusController < ApplicationController
-  before_action :authenticate_user!, only: [:user]
+  before_action :authenticate_user!, only: [:user, :me]
   before_action :authenticate_admin!, only: [:admin]
 
   def ok
@@ -14,5 +14,9 @@ class StatusController < ApplicationController
 
   def admin
     render json: { status: "admin ok" }
+  end
+
+  def me
+    render json: current_user
   end
 end
