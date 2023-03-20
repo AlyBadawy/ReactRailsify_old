@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     get "/status/ok", to: "status#ok"
     get "/status/user", to: "status#user"
     get "/status/admin", to: "status#admin"
+
+    get "/account/me", to: "status#me"
   end
 
   root "react#index"

@@ -9,7 +9,7 @@ module Users
     private
 
     def respond_with(_resource, _opts = {})
-      render json: { message: "You are logged in." }, status: :ok
+      render json: current_user, status: :ok
     end
 
     def respond_to_on_destroy

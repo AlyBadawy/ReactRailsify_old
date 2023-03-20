@@ -9,7 +9,7 @@ module Users
     def create
       build_resource(sign_up_params)
 
-      resource.save if aud.present?
+      resource.save
       yield resource if block_given?
       if resource.persisted?
         if resource.active_for_authentication?
@@ -41,6 +41,5 @@ module Users
     def register_failed
       render json: { message: "Something went wrong." }, status: :unprocessable_entity
     end
-
   end
 end
