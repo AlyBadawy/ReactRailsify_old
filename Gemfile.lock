@@ -210,6 +210,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
+    newrelic_rpm (9.0.0)
     nio4r (2.5.8)
     nokogiri (1.14.2-arm64-darwin)
       racc (~> 1.4)
@@ -411,6 +412,7 @@ DEPENDENCIES
   hashdiff
   jbuilder
   jsbundling-rails
+  newrelic_rpm
   overcommit
   paper_trail
   pg (~> 1.1)
